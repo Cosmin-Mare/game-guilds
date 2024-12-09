@@ -1,0 +1,66 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.heading h1{
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    font-size: 5.5rem;
+    color: #685752;
+    margin-top:0;
+    margin-bottom: 2rem;
+}
+.heading h2{
+    font-family: "Comfortaa", sans-serif;
+    color: #997C70;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: .4rem;
+}
+
+.woodenSwords{
+    width: 40vh;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+.woodenSword{
+    position: absolute;
+    top:32vh;
+    left: 26vw;
+    width: 22vh;
+    animation: rotation .5s infinite alternate;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.buttonContainer button{
+    all:unset;
+    cursor: pointer;
+    background-color: #997C70;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: #6966649d 0px 13px 27px -5px, #4d4a497d 0px 8px 16px -8px;
+    color: #FDF7F4
+}
