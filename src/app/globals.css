@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-body{
-  background-color: #FDF7F4;
+:root{
+  --primary: #685752;
+  --secondary: #997C70;
+  --background: #FDF7F4;
+  --font-nunito: "Nunito", sans-serif;
+  --font-comfortaa: "Comfortaa", sans-serif;
 }
+
+body{
+  background-color: var(--background);
+}
+
+a{
+  color: var(--primary)
+}
+

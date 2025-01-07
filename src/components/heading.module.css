@@ -8,16 +8,16 @@
 }
 
 .heading h1{
-    font-family: "Nunito", sans-serif;
+    font-family: var(--font-nunito);
     font-weight: bolder;
     font-size: 5.5rem;
-    color: #685752;
+    color: var(--primary);
     margin-top:0;
     margin-bottom: 2rem;
 }
 .heading h2{
-    font-family: "Comfortaa", sans-serif;
-    color: #997C70;
+    font-family: var(--font-comfortaa);
+    color: var(--secondary);
     font-weight: 700;
     font-size: 2.2rem;
     margin-top: 0;
@@ -56,8 +56,9 @@
 
 .buttonContainer button{
     all:unset;
+    font-family: var(--font-nunito);
     cursor: pointer;
-    background-color: #997C70;
+    background-color: var(--secondary);
     font-size: 2rem;
     padding: 1rem;
     border-radius: 10px;
