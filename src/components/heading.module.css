@@ -1,4 +1,4 @@
-.heading{
+.header{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,7 +7,7 @@
     margin-top: 15rem;
 }
 
-.heading h1{
+.header h1{
     font-family: var(--font-nunito);
     font-weight: bolder;
     font-size: 5.5rem;
@@ -15,7 +15,7 @@
     margin-top:0;
     margin-bottom: 2rem;
 }
-.heading h2{
+.header h2{
     font-family: var(--font-comfortaa);
     color: var(--secondary);
     font-weight: 700;
@@ -24,8 +24,8 @@
     margin-bottom: .4rem;
 }
 
-.woodenSwords{
-    width: 40vh;
+.headingContainer{
+    position: relative;
 }
 
 @keyframes rotation{
@@ -39,8 +39,8 @@
 
 .woodenSword{
     position: absolute;
-    top:32vh;
-    left: 26vw;
+    top:-20%;
+    left: -18%;
     width: 22vh;
     animation: rotation .5s infinite alternate;
 }

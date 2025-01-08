@@ -50,8 +50,8 @@
     border-radius: 50%;
     color: var(--background);
     background-color: var(--primary);
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 43.2px;
+    height: 43.2px;
     text-align: center;
     font-weight: 900;
 }
@@ -60,13 +60,9 @@
     text-decoration: none;
 }
 
-.infiniteContainer{
+.repeatableCards{
     display: flex;
-    justify-content: left;
     align-items: center;
-}
-
-.infiniteContainer svg{
-    width: 8rem;
-    padding-bottom: 1rem;
+    justify-content: center;
+    gap: 1%
 }
