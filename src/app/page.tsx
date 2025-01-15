@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Steps from "@/components/steps";
+import Tiers from "@/components/tiers";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       </a>
       <Header />
       <Steps />
+      <Tiers />
     </div>
   );
 }

@@ -5,10 +5,20 @@
   --background: #FDF7F4;
   --font-nunito: "Nunito", sans-serif;
   --font-comfortaa: "Comfortaa", sans-serif;
+
+  --color1: #dccdc5;
+  --color2: #bda7a0;
+  --color3: #8a7872;
+  --color4: #715e58;
 }
 
-body{
+body {
   background-color: var(--background);
+  margin-top: 0;
+  padding-top: 0;
+  background-image:url("/background.png");
+  background-size: 400px 400px;
+  background-repeat: repeat;
 }
 
 a{
