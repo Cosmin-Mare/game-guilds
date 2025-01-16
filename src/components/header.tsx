@@ -8,9 +8,27 @@ export default function Header() {
     const [feedbackMessage, setFeedbackMessage] = useState("");
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault(); // Prevents the default form submission behavior
-        // Process the form data here
-        setFeedbackMessage(`Thank you for RSVPing, ${email}!`);
+        event.preventDefault();
+
+        fetch("/api/rsvp", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email }),
+        })
+            .then((response) => {
+                if (response.ok) {
+                    setFeedbackMessage("Thanks for RSVPing! 🎉");
+                    setEmail("");
+                } else {
+                    setFeedbackMessage("Something went wrong. Please try again.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                setFeedbackMessage("Something went wrong. Please try again.");
+            });
     };
 
     return (
@@ -27,7 +45,7 @@ export default function Header() {
                     <input 
                         type="email"
                         name="email"
-                        placeholder="Enter your email address" 
+                        placeholder="orpheus@hackclub.com" 
                         required 
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
