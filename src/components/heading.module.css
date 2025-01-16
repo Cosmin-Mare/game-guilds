@@ -8,7 +8,7 @@
 }
 
 .logo {
-    width: 33rem;
+    width: 40rem;
     margin-top:0;
     margin-bottom: 2rem;
 }
@@ -36,8 +36,8 @@
 
 .woodenSword{
     position: absolute;
-    top:-20%;
-    left: -18%;
+    top:-8%;
+    left: -15%;
     width: 150px;
     animation: rotation .5s infinite alternate;
 }
@@ -61,4 +61,53 @@
     border-radius: 10px;
     box-shadow: #6966649d 0px 13px 27px -5px, #4d4a497d 0px 8px 16px -8px;
     color: #FDF7F4
+}
+
+.rsvp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: white;
+    border: var(--primary) 5px solid;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.rsvp h2{
+    font-family: var(--font-nunito);
+    color: var(--primary);
+    font-style: bold;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: .4rem;
+}
+
+.rsvp input {
+    width: 80%;
+    padding: 0.8rem;
+    margin-right: 1.5rem;
+    font-family: var(--font-nunito);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: var(--primary) 2px solid;
+}
+
+.rsvp form {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+.rsvp button {
+    all:unset;
+    font-family: var(--font-nunito);
+    cursor: pointer;
+    background-color: var(--secondary);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: #FDF7F4;
+    padding: 1rem;
+    margin: 0;
 }

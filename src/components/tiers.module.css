@@ -1,0 +1,83 @@
+.tiersContainer {
+  font-family: var(--font-comfortaa);
+  font-weight: 700;
+  color: var(--secondary);
+  font-size: 2rem;
+}
+
+.swordIcon {
+  width: 100px;
+  animation: rotation .5s infinite alternate;
+}
+
+.firstCol {
+  border-radius: 25px 0 0 25px;
+}
+
+.lastCol {
+  border-radius: 0 25px 25px 0;
+}
+
+.nameCol {
+  font-family: var(--font-nunito);
+  font-size: 2.5rem;
+}
+
+@keyframes rotation{
+  0%{
+      transform: rotate(-5deg);
+  }
+  100%{
+      transform: rotate(5deg);
+  }
+}
+
+.iconTitle {
+  width: 110px;
+}
+
+#tiers {
+  width: 100%;
+  padding: 20px;
+  border-spacing: 0 20px;
+  border: 0;
+}
+
+#tiers td {
+  color: white;
+}
+
+#tiers td, #tiers th {
+  padding: 20px;
+  text-align: left;
+}
+
+#tiers tr {
+  margin: 0;
+  padding-top: 0;
+}
+
+#tiers thead {
+  font-family: var(--font-nunito);
+  font-size: 2.3rem;
+}
+
+.tierInfo {
+  font-size: 1rem;
+}
+
+.tier1 {
+  background-color: #856a39;
+}
+
+.tier2 {
+  background-color: #908e8b;
+}
+
+.tier3 {
+  background-color: #cacaca;
+}
+
+.tier4 {
+  background-color: #85e3d3;
+}
