@@ -26,9 +26,7 @@ export async function POST(req: Request) {
   }
 
   try {
-    // Call the RSVP function
     await rsvp(email);
-
 
     return new Response('RSVP successful', { status: 200 });
   } catch (error) {

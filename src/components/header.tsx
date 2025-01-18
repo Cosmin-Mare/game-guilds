@@ -6,8 +6,13 @@ import styles from "./heading.module.css";
 export default function Header() {
     const [email, setEmail] = useState("");
     const [feedbackMessage, setFeedbackMessage] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        if (isSubmitting) {
+            return;
+        }
+        setIsSubmitting(true);
         event.preventDefault();
 
         fetch("/api/rsvp", {
@@ -19,15 +24,18 @@ export default function Header() {
         })
             .then((response) => {
                 if (response.ok) {
-                    setFeedbackMessage("Thanks for RSVPing! 🎉");
+                    setFeedbackMessage("Thanks for RSVPing!");
                     setEmail("");
+                    setIsSubmitting(false);
                 } else {
                     setFeedbackMessage("Something went wrong. Please try again.");
+                    setIsSubmitting(false);
                 }
             })
             .catch((error) => {
                 console.error("Error:", error);
                 setFeedbackMessage("Something went wrong. Please try again.");
+                setIsSubmitting(false);
             });
     };
 
