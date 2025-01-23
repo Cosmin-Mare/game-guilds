@@ -72,6 +72,8 @@
     border: var(--primary) 5px solid;
     border-radius: 10px;
     padding: 2rem;
+    max-width: max-content;
+    transition: all .5s ease-in-out
 }
 
 .rsvp h2{
@@ -96,8 +98,7 @@
 .rsvp form {
     display: flex;
     flex-direction: row;
-    margin: 2rem;
-    margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 .rsvp button {
@@ -110,4 +111,18 @@
     color: #FDF7F4;
     padding: 1rem;
     margin: 0;
+}
+
+.feedbackMessage{
+    font-family: var(--font-comfortaa);
+    font-weight: 800;
+    font-size: 1.1rem;
+    transform: translate(-100%, 0);
+    width: fit-content;
+    transition: all ease-in-out .5s;
+}
+
+.feedbackMessageContainer{
+    width: 100%;
+    overflow: hidden;
 }
