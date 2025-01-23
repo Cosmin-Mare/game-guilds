@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <div className={"submitGame"}>
-        <button type="submit">Submit your game!</button>
+        <a className={"button"} href="https://airtable.com/appHyfZjPXrRXxVGl/pagm3aJtiGwB7NfJl/form">Submit your game!</a>
       </div>  
       <a href="https://hackclub.com" className={"hcLogo"}>
         <img src="/flag-orpheus-top.svg"></img>

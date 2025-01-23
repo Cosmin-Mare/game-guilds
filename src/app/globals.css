@@ -32,7 +32,7 @@ a{
   width: 15rem;
 }
 
-button {
+button, .button {
   all:unset;
   font-family: var(--font-nunito);
   cursor: pointer;
@@ -55,6 +55,6 @@ button {
 }
 
 .submitGame > * {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: auto;
 }
