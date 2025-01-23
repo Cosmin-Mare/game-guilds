@@ -29,6 +29,32 @@ a{
   position: absolute;
   top:0;
   left:1rem;
-  width: 12%;
+  width: 15rem;
 }
 
+button {
+  all:unset;
+  font-family: var(--font-nunito);
+  cursor: pointer;
+  background-color: var(--secondary);
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #FDF7F4
+}
+
+.submitGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; 
+  padding: 2rem;
+}
+
+.submitGame > * {
+  font-size: 2rem;
+  margin-left: auto;
+}

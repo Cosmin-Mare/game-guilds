@@ -51,18 +51,6 @@
     width: 80%;
 }
 
-.buttonContainer button{
-    all:unset;
-    font-family: var(--font-nunito);
-    cursor: pointer;
-    background-color: var(--secondary);
-    font-size: 2rem;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: #6966649d 0px 13px 27px -5px, #4d4a497d 0px 8px 16px -8px;
-    color: #FDF7F4
-}
-
 .rsvp {
     display: flex;
     flex-direction: column;
@@ -102,15 +90,7 @@
 }
 
 .rsvp button {
-    all:unset;
-    font-family: var(--font-nunito);
-    cursor: pointer;
-    background-color: var(--secondary);
     font-size: 1.5rem;
-    border-radius: 10px;
-    color: #FDF7F4;
-    padding: 1rem;
-    margin: 0;
 }
 
 .feedbackMessage{
