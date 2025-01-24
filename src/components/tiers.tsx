@@ -1,9 +1,14 @@
 import styles from "./tiers.module.css"
 import TierCard, { TierCardProps } from "./tierCard"
 
+export interface TierCard extends TierCardProps{
+  key: number
+}
+
 export default function Tiers() {
-  const tiers : TierCardProps[] = [
+  const tiers : TierCard[] = [
     {
+      key: 1,
       tierColor: "#856a39",
       tierIcon: "/wooden_sword.png",
       tierName: "Playground",
@@ -12,6 +17,7 @@ export default function Tiers() {
       maxReward: "$50"
     },
     {
+      key: 2,
       tierColor: "#908e8b",
       tierIcon: "/stone_sword.png",
       tierName: "Voyage",
@@ -20,6 +26,7 @@ export default function Tiers() {
       maxReward: "$100"
     },
     {
+      key: 3,
       tierColor: "#cacaca",
       tierIcon: "/iron_sword.png",
       tierName: "Horizon",
@@ -28,6 +35,7 @@ export default function Tiers() {
       maxReward: "$200"
     },
     {
+      key: 4,
       tierColor: "#85e3d3",
       tierIcon: "/diamond_sword.png",
       tierName: "Ascent",
@@ -38,8 +46,9 @@ export default function Tiers() {
   ];
   return (
     <div className={styles.tiers}>
-      {/* @ts-ignore */}
-      {tiers.map((tier) => (<TierCard {...tier}/>))}
+      {
+      tiers.map((tier) => (<TierCard key={tier.key} {...tier as TierCardProps}/>))
+      }
     </div>
 
   );
