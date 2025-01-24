@@ -21,12 +21,12 @@ export default function TierCard(props: TierCardProps) {
         <hr className={styles.divider} />
         <div className={styles.aspectContainer} >
           <p className={styles.aspectTitle} >Maximum Reward</p>
-          <p className={styles.aspectDescription} >{props.playtime}</p>
+          <p className={styles.aspectDescription} >{props.maxReward}</p>
         </div>
         <hr className={styles.divider} />
         <div className={styles.aspectContainer} >
           <p className={styles.aspectTitle} >Expected playtime</p>
-          <p className={styles.aspectDescription} >{props.maxReward}</p>
+          <p className={styles.aspectDescription} >{props.playtime}</p>
         </div>
       </div>
     </div>
