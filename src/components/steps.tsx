@@ -44,7 +44,7 @@ export default function Steps() {
                 </p>
             </div>
             <div>
-                <img src="/infinite.svg" alt="loop"/>
+                <img src="/x4.svg" alt="loop"/>
             </div>
             <div className={styles.stepCard}>
                 <div className={styles.stepHeadingContainer}>
