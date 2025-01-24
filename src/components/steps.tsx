@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./steps.module.css"
 export default function Steps() {
   return (
@@ -45,7 +44,7 @@ export default function Steps() {
                 </p>
             </div>
             <div>
-                <Image src="/infinite.svg" alt="loop"/>
+                <img src="/infinite.svg" alt="loop"/>
             </div>
             <div className={styles.stepCard}>
                 <div className={styles.stepHeadingContainer}>

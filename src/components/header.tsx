@@ -1,10 +1,9 @@
 "use client";
-
 import { useRef, useState } from "react";
 import styles from "./header.module.css";
 import Explosion from "react-canvas-confetti/dist/presets/explosion";
 import { TConductorInstance, TDecorateOptionsFn } from "react-canvas-confetti/dist/types";
-import Image from "next/image";
+
 
 export default function Header() {
     const [email, setEmail] = useState("");
@@ -78,8 +77,8 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <div className={styles.headingContainer}>
-                <Image src="/wooden_sword_title.png" className={styles.woodenSword} alt="Wooden sword"/>
-                <Image src="/logo.svg" className={styles.logo} alt="GameGuilds logo"/>
+                <img src="/wooden_sword_title.png" className={styles.woodenSword} alt="Wooden sword"/>
+                <img src="/logo.svg" className={styles.logo} alt="GameGuilds logo"/>
             </div>
             <h2>Build Unity games with your friends</h2>
             <h2>Receive grants to improve and publish them</h2>
