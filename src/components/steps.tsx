@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./steps.module.css"
 export default function Steps() {
   return (
@@ -13,7 +14,7 @@ export default function Steps() {
             </div>
             <p className={styles.stepBody}>
                 Unity is one of the best platforms to start your game dev journey, 
-                because it is pretty versitile and doesn't have a very steep learning curve. Even if you're a 
+                because it is pretty versitile and doesn&apos;t have a very steep learning curve. Even if you&apos;re a 
                 complete beginner, like I was 1 month before making <a href="#">this awesome beginner-friendly jam</a>, 
                 you can set up a 3d environment with a prebuilt Unity character controller in
                 under an hour and then customize your game from there! You can also build a team and work on games together!
@@ -44,7 +45,7 @@ export default function Steps() {
                 </p>
             </div>
             <div>
-                <img src="/infinite.svg"></img>
+                <Image src="/infinite.svg" alt="loop"/>
             </div>
             <div className={styles.stepCard}>
                 <div className={styles.stepHeadingContainer}>
@@ -55,7 +56,7 @@ export default function Steps() {
                 <p className={styles.stepBody}>
                     After your first itteration, you will receive a grant to improve it. Then you can update it on Github and Itch
                     and submit the form again, with the new game! <a href="#">Here</a> are the requirements for upgrading games. <br/>
-                    (p.s. you'll find that having a team is especially useful for this step)
+                    (p.s. you&apos;ll find that having a team is especially useful for this step)
                 </p>
             </div>
         </div>

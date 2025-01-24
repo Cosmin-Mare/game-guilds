@@ -1,5 +1,5 @@
+import Image from "next/image";
 import styles from "./tierCard.module.css"
-import tierCard from "./tierCard"
 
 interface TierCardProps {
   tierColor: string;
@@ -14,7 +14,7 @@ export default function TierCard(props: TierCardProps) {
   return (
     <div className={styles.tierCard}>
       <div className={styles.header} style={{backgroundColor: props.tierColor}}>
-        <img src={props.tierIcon} className={styles.swordIcon} alt="Sword"/>
+        <Image src={props.tierIcon} className={styles.swordIcon} alt="Sword"/>
         <h2>{props.tierName}</h2>
       </div>
       <div className={styles.cardBody}>

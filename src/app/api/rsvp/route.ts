@@ -1,4 +1,3 @@
-// @ts-ignore
 import AirtablePlus from "airtable-plus";
 import Airtable from "airtable";
 
