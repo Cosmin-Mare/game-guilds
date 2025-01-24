@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-expect-error
 import AirtablePlus from "airtable-plus";
 import Airtable from "airtable";
 
