@@ -11,7 +11,7 @@ export interface TierCardProps {
 
 export default function TierCard(props: TierCardProps) {
   return (
-    <div className={styles.tierCard}>
+    <div className={styles.tierCard} id="requirements">
       <div className={styles.header} style={{backgroundColor: props.tierColor}}>
         <img src={props.tierIcon} className={styles.swordIcon} alt="Sword"/>
         <h2>{props.tierName}</h2>

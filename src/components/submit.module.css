@@ -1,0 +1,12 @@
+.submitButtonContainer {
+    position: sticky;
+    top:2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.submitButton{
+    font-size: 1.5rem;
+    margin-left: auto;
+}

@@ -1,0 +1,14 @@
+.footer{
+    font-family: var(--font-nunito);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.footer>*{
+    margin-top: 0;
+    font-weight: 600;
+    color: var(--secondary);
+}

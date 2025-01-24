@@ -25,14 +25,7 @@ a{
   color: var(--primary)
 }
 
-.hcLogo{
-  position: absolute;
-  top:0;
-  left:1rem;
-  width: 15rem;
-}
-
-button, .button {
+button{
   all:unset;
   font-family: var(--font-nunito);
   cursor: pointer;
@@ -40,21 +33,17 @@ button, .button {
   font-size: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  color: #FDF7F4
+  color: #FDF7F4;
+  transition: all .2s ease-in-out;
 }
 
-.submitGame {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%; 
-  padding: 2rem;
+button:hover{
+  background-color: #66534b;
+  transform: scale(1.1, 1.1);
 }
 
-.submitGame > * {
-  font-size: 1.5rem;
-  margin-left: auto;
+button:active{
+  background-color: #66534b;
+  transition: all .05s ease-in-out;
+  transform: scale(1, 1);
 }

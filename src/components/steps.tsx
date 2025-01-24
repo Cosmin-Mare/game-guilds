@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./steps.module.css"
 export default function Steps() {
   return (
@@ -54,7 +56,7 @@ export default function Steps() {
                 </div>
                 <p className={styles.stepBody}>
                     After your first itteration, you will receive a grant to improve it. Then you can update it on Github and Itch
-                    and submit the form again, with the new game! <a href="#">Here</a> are the requirements for upgrading games. <br/>
+                    and submit the form again, with the new game! <a href="#requirements">Here</a> are the requirements for upgrading games. <br/>
                     (p.s. you&apos;ll find that having a team is especially useful for this step)
                 </p>
             </div>
