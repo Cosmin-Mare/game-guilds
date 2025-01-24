@@ -1,3 +1,4 @@
+// @ts-ignore
 import AirtablePlus from "airtable-plus";
 import Airtable from "airtable";
 
@@ -17,7 +18,7 @@ export async function rsvp(email: string): Promise<AirtablePlus.Record> {
 
 export async function POST(req: Request) {
   
-  let { email } = await req.json();
+  const { email } = await req.json();
 
   if (!email) {
     return new Response('Missing required fields', {
