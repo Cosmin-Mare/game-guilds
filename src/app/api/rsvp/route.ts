@@ -1,7 +1,7 @@
 import AirtablePlus from "airtable-plus";
 import Airtable from "airtable";
 
-export async function rsvp(email: string): Promise<AirtablePlus.Record> {
+async function rsvp(email: string): Promise<AirtablePlus.Record> {
   const rsvpTable = new AirtablePlus({
     baseID: process.env.AIRTABLE_BASE_ID,
     apiKey: process.env.AIRTABLE_API_KEY,
