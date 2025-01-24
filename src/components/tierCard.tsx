@@ -1,6 +1,6 @@
 import styles from "./tierCard.module.css"
 
-interface TierCardProps {
+export interface TierCardProps {
   tierColor: string;
   tierIcon: string;
   tierName: string;
