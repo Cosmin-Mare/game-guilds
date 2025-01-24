@@ -1,4 +1,4 @@
-// @ts-expect-error
+// @ts-expect-error I can't find the type of this module
 import AirtablePlus from "airtable-plus";
 import Airtable from "airtable";
 
