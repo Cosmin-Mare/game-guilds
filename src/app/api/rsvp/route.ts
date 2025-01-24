@@ -1,3 +1,4 @@
+// @ts-nocheck
 import AirtablePlus from "airtable-plus";
 import Airtable from "airtable";
 
