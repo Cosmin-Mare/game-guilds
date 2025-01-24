@@ -103,7 +103,7 @@ export default function Header() {
                 </div>
             </section>
             <div className={styles.buttonContainer}>
-                <button>Get your grant!</button>
+                <button onClick={() => window.location.assign("https://airtable.com/appHyfZjPXrRXxVGl/pagm3aJtiGwB7NfJl/form")}>Get your grant!</button>
                 <button>How to make a game?</button>
             </div>
         </div>
